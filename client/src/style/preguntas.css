@@ -1,0 +1,63 @@
+.masthead {
+    background-color: #bfdfda; /* Color de fondo gris claro con transparencia */
+    padding-top: 130px; /* Espacio desde la parte superior del viewport */
+    padding-bottom: 50px; /* Espacio desde la parte inferior del viewport */
+  }
+  
+  .masthead h1 {
+    margin-top: 0; /* Eliminamos el margen superior del título */
+  }
+  /* Estilos para el elemento <div> con la clase "preg" */
+  .preg {
+  
+    display: inline-flex; /* Hace que los elementos dentro del div se alineen en una sola fila */
+    align-items: center; /* Centra verticalmente los elementos en la fila */
+    padding:50px; /* Agregar espacio interno alrededor del contenido */
+    padding-bottom: 58px;
+    padding-left: 45px;
+    padding-right: 65px;
+    font-size: 35px; /* Tamaño del icono */
+    border-radius: 100%; /* Borde sea redondo, creando un círculo */
+    background-color: #e0e0e0a6; /* Color de fondo del círculo */
+    width:80px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 200px;
+    }
+    /* Estilos para el elemento <i> con la clase "fas fa-question" (ícono) */
+  .preg i {
+  
+    margin-right: 52px; /* Agrega un espacio entre el ícono y el texto "Hola" */
+    }
+    
+    
+    /* Estilos para el elemento <span> con la clase "icon-label" */
+  
+    h4{
+        font-family: sans-serif;
+        font-style: oblique;
+        margin-left: 100px;
+        text-align: left; 
+    }
+  .icon-label {
+    display: block; /* Hace que el texto ocupe todo el ancho del círculo */
+    text-align: center; /* Centra el texto horizontalmente dentro del círculo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-family: sans-serif;
+    font-weight: bolder;
+  }
+  .circle {
+    width: 270px;
+    height: 270px;
+    margin-top: 470px;
+    margin-left: 900px;
+    border-radius: 50%;
+    background: conic-gradient(#a3eadf, #777194);
+  }
+
+  /* Estilos CSS para controlar el tamaño de la imagen */
+.product-image {
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    max-height: 200px; /* Altura máxima de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que cubra el espacio disponible */
+  }
