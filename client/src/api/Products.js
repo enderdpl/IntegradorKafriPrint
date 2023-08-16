@@ -10,3 +10,6 @@ export const updateProductRequest = (id, product) => axios.put(`/products/${id}`
 
 export const deleteProductRequest = (id) => axios.delete(`/products/${id}`);
 
+export const getProductsNoValidatedRequest = () => axios.get('/productsNoVali');
+
+

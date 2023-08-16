@@ -1,5 +1,5 @@
 import { createContext,useContext, useState } from "react";
-import { createProductRequest,getProductsRequest } from "../api/Products";
+import { createProductRequest,getProductsRequest, getProductsNoValidatedRequest } from "../api/Products";
 
 const ProductContext= createContext()
 
@@ -24,6 +24,17 @@ export function ProductProvider({children}) {
         
     }
 
+    const getProductsNoValidated = async () => {
+        try {
+            const response = await getProductsNoValidatedRequest()
+            console.log(response)
+        setProducts(response.data)
+        } catch (error) {
+            console.log(error)
+        }
+        
+    }
+
     const createProduct= async (product) => {
         const res = await createProductRequest(product)
         console.log(res)
@@ -35,6 +46,7 @@ export function ProductProvider({children}) {
             products,
             createProduct,
             getProducts,
+            getProductsNoValidated
     }}> 
     {children}
     </ProductContext.Provider>

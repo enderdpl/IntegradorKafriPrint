@@ -8,6 +8,7 @@ import ProfilePage from "./pages/ProfilePage";
 import HomePage from "./pages/HomePage";
 import ProtectedRoute from "./ProtectedRoute";
 import Ejemplo from "./components/ejemplo";
+import Footer from "./components/footer";
 
 // import './index.css';
 // import './App.css';
@@ -54,6 +55,7 @@ function App() {
         </Route>
 
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ProductProvider> 
   </AuthProvider>
