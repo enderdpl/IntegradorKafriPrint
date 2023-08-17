@@ -1,0 +1,124 @@
+.navbar {
+  background-color: #403a51;
+  font-size: 20px;
+  font-family: 'Open Sans' sans-serif;
+
+}
+
+.navbar-spacing li {
+  margin-right: 40px;
+  /* Ajusta el valor del margen según el espacio deseado */
+
+}
+
+.navbar-nav a {
+  color: #d3d3d3 !important;
+  /* Cambia #FF0000 por el código de color deseado */
+
+}
+
+.navbar-nav a:hover {
+  background-color: rgba(202, 198, 198, 0.128);
+  /* Cambia #FF0000 por el color de fondo deseado */
+}
+
+#carouselExampleSlidesOnly {
+
+  background-color: #ddddde;
+}
+
+#cotizacion {
+  background-color: #ddddde;
+}
+
+#footer {
+  background-color: #403a51;
+}
+
+.fa-calendar-lines {
+
+  background-color: #403a51;
+}
+
+
+#carouselExampleSlidesOnly .carousel-indicators li {
+  background-color: rgb(202, 198, 198);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+
+}
+
+#instagram {
+  color: #bc1888;
+  font-size: 30px;
+  margin: 1rem;
+}
+
+#facebook {
+  color: #3b5998;
+  font-size: 30px;
+  margin: 1rem;
+}
+
+#whatsapp {
+
+  color: #D0E9EA;
+  font-size: 30px;
+  margin: 1rem;
+}
+
+/* Estilos para el icono de WhatsApp flotante */
+.floating-wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Estilos para los iconos */
+.custom-icon {
+  font-size: 40px;
+  /* Tamaño del icono */
+  color: #403a51c7;
+  /* Color del icono */
+  border: 3px solid rgb(200, 199, 199);
+  /* Borde del icono */
+  border-radius: 50%;
+  /* Borde redondeado del icono */
+  padding: 20px;
+  /* Espacio interno del icono */
+  margin: 20px 40px;
+  /* Espacio externo del icono, margen derecho aumentado a 20px */
+  transition: color 0.3s;
+  /* Transición suave para el cambio de color */
+}
+
+.icon-wrapper:hover .custom-icon {
+  color: rgb(179, 179, 179);
+  /* Color al pasar el cursor por encima */
+}
+
+/* Centrar los iconos en el contenedor */
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Alinear verticalmente los elementos del contenedor */
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout {
+  width: 1920px;
+  height: 1080px;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
