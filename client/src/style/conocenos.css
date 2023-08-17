@@ -1,0 +1,29 @@
+.masthead {
+    background-color: #c0a3c7df; /* Color de fondo gris claro con transparencia */
+    padding-top: 130px; /* Espacio desde la parte superior del viewport */
+    padding-bottom: 50px; /* Espacio desde la parte inferior del viewport */
+  }
+
+ 
+  /*carrusel de fotos*/
+  #carouselExampleControls .carousel-inner  {
+    height: 100%; /* Aumenta este valor para aumentar la altura del carrusel */
+    width: 150%;
+    margin-left: -100px;
+    border: solid 5px rgba(0, 0, 0, 0.555);
+    border-radius: 10px;
+
+}
+
+/*estilos feed de instram*/
+
+
+.lead{
+    font-family:'Lucida Sans';
+    padding-left: 150px;
+}
+h3{
+    font-family:'Lucida Sans';
+    text-align: right;
+  }
+  
