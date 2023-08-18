@@ -3,6 +3,11 @@ import $ from 'jquery';
 import imgBaner from "../img/fondo-banner-1CHICO.png";
 import imgBaner2 from "../img/fondo-banner-2-CHICO.png.png";
 import imgBaner3 from "../img/fondo-banner-3-CHICO.png.png";
+import flechaIz from "../img/angle-left-solid.svg";
+import flechaDe from "../img/chevron-right-solid.svg";
+import fotoAno from "../img/anonima.img.jpg";
+import fotoper from "../img/testimonio4.jpg copy.jpeg";
+
 
 
 
@@ -64,10 +69,10 @@ function Cotizacion() {
         </section>
         {/* Flecha para deslizar el banner */}
         <a className="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="prev">
-          <img src="img/angle-left-solid.svg" alt="Previous" style={{width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)'}} />
+          <img src= {flechaIz} alt="Previous" style={{width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)'}} />
         </a>
         <a className="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="next">
-          <img src="img/chevron-right-solid.svg" alt="Next" style={{width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)'}} />
+          <img src={flechaDe} alt="Next" style={{width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)'}} />
         </a>
         {/* Iconos  */}
         <section>
@@ -107,7 +112,7 @@ function Cotizacion() {
               <div className="carrusel">
                 <div className="reseña testimonial">
                   <div className="testimonial-bg">
-                    <img src="img/anonima.img.jpg" alt="Testimonio 1" className="img-fluid" />
+                    <img src={fotoAno}alt="Testimonio 1" className="img-fluid" />
                     <p>Krafi print, es un emprendimiento<br /> 
                       que siempre cumple las expectativas<br />
                       de sus clientes, tanto en calidad <br />
@@ -118,7 +123,7 @@ function Cotizacion() {
                 </div>
                 <div className="reseña testimonial">
                   <div className="testimonial-bg">
-                    <img src="img/anonima.img.jpg" alt="Testimonio 2" className="img-fluid" />
+                    <img src={fotoAno} alt="Testimonio 2" className="img-fluid" />
                     <p> La diversidad de productos que ofrece<br />
                       ha satisfecho la busqueda de detalles<br />
                       para acompañar mis dulces en<br />
@@ -130,7 +135,7 @@ function Cotizacion() {
                 </div>
                 <div className="reseña testimonial">
                   <div className="testimonial-bg">
-                    <img src="img/anonimo.img" alt="Testimonio 3" className="img-fluid" />
+                    <img src={fotoAno} alt="Testimonio 3" className="img-fluid" />
                     <p>Lo recomiendo 100% excelente calidad<br />
                       y muy buena atencion. He comprado<br />
                       varios productos y todos<br />
@@ -141,7 +146,7 @@ function Cotizacion() {
                 </div>
                 <div className="reseña testimonial">
                   <div className="testimonial-bg">
-                    <img src="img/testimonio4.jpg copy.jpeg" alt="Testimonio 4" className="img-fluid" />
+                    <img src={fotoper} alt="Testimonio 4" className="img-fluid" />
                     <p>La sublimación en mi camiseta<br />  es impecable.<br /> ¡Muy contenta con el resultado!</p>
                     <i className="bx bxs-quote-alt-left quote-icon" />
                     <h4>Anais Valenzuela</h4>
@@ -149,7 +154,7 @@ function Cotizacion() {
                 </div>
                 <div className="reseña testimonial">
                   <div className="testimonial-bg">
-                    <img src="img/testimonio5.jpg copy.jpeg" alt="Testimonio 5" className="img-fluid" />
+                    <img src={fotoAno} alt="Testimonio 5" className="img-fluid" />
                     <p>Gracias a Krafi Print, pude regalar<br /> algo único y personalizado a mi amiga<br /> 
                       <br />
                       <i className="bx bxs-quote-alt-left quote-icon" />
@@ -158,7 +163,7 @@ function Cotizacion() {
                 </div>
                 <div className="reseña testimonial">
                   <div className="testimonial-bg"> 
-                    <img src="img/testimonio6.jpg.jpeg" alt="Testimonio 6" className="img-fluid" />
+                    <img src={fotoper} alt="Testimonio 6" className="img-fluid" />
                     <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit.<br /> Nullam fermentum,nunc a <br />facilisis</p>
                     <i className="bx bxs-quote-alt-left quote-icon" />
                     <h4>Gloria Gloria</h4>
