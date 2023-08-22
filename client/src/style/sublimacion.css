@@ -1,0 +1,125 @@
+.masthead {
+    background-color: #bfdfda; /* Color de fondo gris claro con transparencia */
+    padding-top: 130px; /* Espacio desde la parte superior del viewport */
+    padding-bottom: 50px; /* Espacio desde la parte inferior del viewport */
+  }
+
+  .masthead h1 {
+    margin-top: 0; /* Eliminamos el margen superior del título */
+  }
+
+/* Estilo para cada contenedor individual */
+.icon-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Cambiar el tamaño de acuerdo a tus necesidades */
+    height: 100px; /* Igual altura y ancho para formar un círculo */
+    border: 3px solid #bfdfda83; /* Borde gris */
+    border-radius: 50%; /* Formar un círculo con borde redondo */
+    margin: 45px; /* Espacio mayor entre los íconos y las fotos */
+    padding: 70px;
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    
+  
+}
+  
+  /* Estilo para las imágenes dentro de los contenedores */
+  .icon-container img {
+    max-width: 80px; /* Ajustar el tamaño de la imagen */
+    max-height: 80px; /* Ajustar el tamaño de la imagen */
+  }
+  /* Estilo para el texto debajo de las imágenes */
+.icon-item p {
+    margin-top: -40px; /* Espacio entre la imagen y el texto */
+  }
+  /* Estilo para cada ícono y su texto */
+.icon-item {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h5.explain {
+    text-align: center; /* Centrar el texto */
+    font-family: 'Times New Roman', Times, serif; /* Cambiar la fuente del texto */
+    font-size: 29px; /* Tamaño de fuente, ajusta el valor según lo necesites */
+    border-radius: 10px;
+    padding: 10px; /* Espacio interno alrededor del título */
+    width: fit-content; /* Ajustar el ancho al contenido del título */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+  .circle {
+    width: 270px;
+    height: 270px;
+    margin-top: 470px;
+    margin-left: 900px;
+    border-radius: 50%;
+    background: conic-gradient(#a3eadf, #777194);
+  }
+  .circles {
+    width: 110px;
+    height: 110px;
+    margin-top: -400px;
+    margin-left: 80px;
+    border-radius: 50%;
+    background: white;
+    border: 20px solid #b3ebe3;
+  }
+  .circles2 {
+    width: 210px;
+    height: 210px;
+    margin-top: -290px;
+    margin-left: 1080px;
+    border-radius: 50%;
+    background: white;
+    border: 20px solid #b3ebe3;
+  }
+/* Estilo para las imágenes redondas */
+.round-image {
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover; 
+  }
+  
+  /* Tamaño específico para cada imagen */
+  img[src="../img/polera1.jpg.jpg"] {
+    width: 660px !important;
+    height: 650px !important;
+    top: 650px; /* Ajusta la posición vertical */
+    left: 410px; /* Ajusta la posición horizontal */
+  }
+  
+  img[src="../img/polera2.jpg.jpg"] {
+    width: 260px !important;
+    height: 260px !important;
+    top: 560px; /* Ajusta la posición vertical */
+    left: 180px; /* Ajusta la posición horizontal */
+  }
+  
+  img[src="../img/tiktok.jpg.jpg"] {
+    width: 410px !important;
+    height: 410px !important;
+    left: 200px !important; /* Ajusta la posición horizontal */
+    top: 940px; /* Ajusta la posición vertical */
+    border: 18px solid white;
+    
+  }
+  #footer {
+    margin-top: 100px;
+    padding-top: 100px;
+
+  }
+  .section-container {
+    display: flex;
+  flex-direction: column; /* Cambiamos la dirección del flex container a columna */
+  justify-content: flex-end; /* Alineamos los elementos al final verticalmente */
+  align-items: center; /* Centramos horizontalmente los elementos */
+  height: 100vh; /
+    
+  }
+  
+  .round-image {
+    border-radius: 50%;
+    max-width: 20%; /* Evita que las imágenes se desborden */
+    height: auto; /* Mantiene la proporción de aspecto */
+  }
+  
