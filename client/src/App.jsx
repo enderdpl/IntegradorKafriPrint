@@ -10,6 +10,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import Ejemplo from "./components/ejemplo";
 import Footer from "./components/footer";
 
+
 // import './index.css';
 // import './App.css';
 // Agrega esta línea para importar tus estilos
@@ -23,6 +24,7 @@ import Impresion from "./pages/Impresion";
 import Papeleria from "./pages/Papeleria";
 import Sublimacion from "./pages/Sublimacion";
 import Preguntas from "./pages/Preguntas";
+import Carrito from "./pages/Carrito";
 
 
 
@@ -44,6 +46,8 @@ function App() {
           <Route path="/papeleria" element={< Papeleria />} />
           <Route path="/sublimacion" element={< Sublimacion />} />
           <Route path="/preguntas" element={< Preguntas />} />
+          <Route path="/carrito" element={< Carrito />} />
+
 
         <Route element= {<ProtectedRoute />}>
           <Route path="/products" element={< ProductsPage />} />

@@ -1,6 +1,8 @@
 function CarProducts({ product }) {
     return (
-      <div className="product-card">
+      <div>
+    <div >
+        </div> 
       <h1>{product.title}</h1>
       <p>{product.description}</p>
       <img className="product-image" src={product.url} alt={product.title} />

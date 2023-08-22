@@ -1,5 +1,9 @@
+import { useProducts } from "../context/ProductsContext";
 
 function ProductsCard({ product }) {
+
+  const {deleteProduct} = useProducts();
+
   return (
     <div className="product-card">
     <h1>{product.title}</h1>
@@ -9,7 +13,9 @@ function ProductsCard({ product }) {
     <p>Category: {product.category}</p>
     <div className="button-container">
     <button className="btn btn-primary">Edit</button>
-    <button className="btn btn-danger">Delete</button>
+    <button className="btn btn-danger" onClick={()=>{
+      deleteProduct(product._id);
+    }}>Delete</button>
   </div>
   </div>
   

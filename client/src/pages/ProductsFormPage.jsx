@@ -6,10 +6,10 @@ import { storage } from "../firebase/config";
 import { useState } from "react";
 
 function ProductsFormPage() {
+  const [file, setFile] = useState(null);
   const { register, handleSubmit, setValue } = useForm();
   const { createProduct } = useProducts();
   const navigate = useNavigate();
-  const [file, setFile] = useState(null);
 
   const escucharFile = (e) => {
     const selectFile = e.target.files[0];
@@ -20,20 +20,33 @@ function ProductsFormPage() {
     if (file) {
       const storageRef = storage.ref();
       const fileRef = storageRef.child(file.name);
-
+  
       try {
         await fileRef.put(file);
-        const url = await fileRef.getDownloadURL();
-        setValue("url", url); // Establecer el valor del campo "url" con la URL de la imagen
+        const urlFirebase = await fileRef.getDownloadURL(); // Obtener la URL de descarga
+        
+        // Actualizar el valor de "url" usando setValue
+        setValue("url", urlFirebase);
+  
+        console.log("esta es la url", urlFirebase); // Mostrar la URL en la consola
       } catch (error) {
         console.error("Error al subir el archivo:", error);
       }
     }
   };
+  
+  
 
-  const onSubmit = handleSubmit((data) => {
-    createProduct(data);
-    navigate("/products");
+  const onSubmit = handleSubmit(async (data) => {
+    try {
+      console.log("titulo", data.title);
+      console.log("url", data);
+
+      await createProduct(data);
+      navigate("/products");
+    } catch (error) {
+      console.error("Error al crear el producto:", error);
+    }
   });
 
   return (
@@ -45,6 +58,7 @@ function ProductsFormPage() {
           <input className="form-control" type="text" placeholder="description" {...register("description")} />
           <input className="form-control" type="text" placeholder="category" {...register("category")} />
           <input type="file" onChange={escucharFile} />
+
           <button className="btn btn-primary" onClick={guardarArchivo}>
             Subir Imagen y Agregar Producto
           </button>
@@ -53,5 +67,7 @@ function ProductsFormPage() {
     </div>
   );
 }
+
+
 
 export default ProductsFormPage
