@@ -2,10 +2,12 @@ import "../style/conocenos.css"
 import imgConocenos from "../img/gallary-conocenos.jpg";
 import imgConocenos2 from "../img/gallary-conocenos1.jpg";
 import imgConocenos3 from "../img/gallary-conocenos2.jpg";
+import WhatsAppFloating from "./WhatsappFlotante";
 
 function Conocenos() {
   return (
     <div>
+      <WhatsAppFloating/>
          <header className="masthead text-center text-white">
         <div className="container px-5">
           <h1 className="display-3">Conocenos</h1>
