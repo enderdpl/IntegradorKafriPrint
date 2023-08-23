@@ -3,8 +3,7 @@ import LogoKafri from "../img/KafriLogo.png";
 
 function Preguntas() {
   return (
-    
-
+  
     <div>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,7 +28,7 @@ function Preguntas() {
         <h4>¡Claro!, puedes hacer click en <a href="/cotizacion.html">este link</a> y contactarnos para pedidos especiales</h4>
         <div className="preg"> <i className="fas fa-question" />
           <span className="icon-label">¿Cómo puedo hacer un pedido?</span></div><br />
-        <h4>Escribenos via Whatsapp o en la sección "Contacto" o "Cotizacion" en nuestra página.</h4>
+        <h4>Escribenos via Whatsapp o en la sección  `Contacto ` o  `Cotizacion ` en nuestra página.</h4>
         <div className="preg"> <i className="fas fa-question" />
           <span className="icon-label">¿Tienen opciones de envio?</span></div><br />
         <h4>¡Claro!, enviamos por empresas de transportes tales como: Starken, Correos de Chile, Chevalier y Varmontt.</h4>
@@ -39,8 +38,7 @@ function Preguntas() {
         <div className="preg"> <i className="fas fa-question" />
           <span className="icon-label">¿Puedo ver los productos de forma presencial?</span></div><br />
         <h4>Por el momento no contamos con local físico, sin embargo, en nuestras RR.SS avisamos cada vez que participamos<br /> en una exposicion presencial, o en ferias artesanales.</h4>
-        {/* Background que englobe texto e icono de las preguntas */}
-        <div className="circle" />
+
         {/* pie de pagina*/}
         <section id="contact">
           <div className="container-fluid">
@@ -73,9 +71,9 @@ function Preguntas() {
                       <div className="col-12">
                         <div className="social-icons text-center">
                           <p />
-                          <a href="https://www.facebook.com/KrafiPrint" target="_blank"><i className="fab fa-facebook fa-2x" id="facebook" /></a>
+                          <a href="https://www.facebook.com/KrafiPrint" target="_blank" rel="noreferrer"><i className="fab fa-facebook fa-2x" id="facebook" /></a>
                           <a href="#"><i className="fa-brands fa-whatsapp fa-2x" id="whatsapp" /></a>
-                          <a href="https://www.instagram.com/krafiprint/?hl=es" target="_blank"><i className="fab fa-instagram fa-2x" id="instagram" /></a>
+                          <a href="https://www.instagram.com/krafiprint/?hl=es" target="_blank" rel="noreferrer"><i className="fab fa-instagram fa-2x" id="instagram" /></a>
                         </div>
                       </div>
                     </div>

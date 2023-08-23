@@ -1,0 +1,53 @@
+/* Estilos CSS personalizados */
+.masthead h1 {
+  margin-top: 0;
+}
+
+.masthead {
+  background-color: #b3cfdaee;
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+.cuadrado {
+  background-color: #f8efde;
+  padding-top: 25%;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.img-chapita,
+.img-sticker,
+.img-target {
+  max-width: 1000px;
+}
+
+.img-postit,
+.img-agenda{
+  max-width: 840px;
+  
+}
+.img-fluid {
+  width: 120%; /* Cambia este valor según tus necesidades */
+  object-fit: cover;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  margin-left: -10px;
+  padding-right: 0px;
+}
+
+/* Fin de los estilos CSS personalizados */
+
+/* Resto de tus estilos CSS existentes */
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: rgba(75, 79, 97, 0.712);
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
