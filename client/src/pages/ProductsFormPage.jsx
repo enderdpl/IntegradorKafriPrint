@@ -1,15 +1,35 @@
 import { useForm } from "react-hook-form";
 import { useProducts } from "../context/ProductsContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useParams } from "react-router-dom";
 import "../style/preguntas.css";
 import { storage } from "../firebase/config";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function ProductsFormPage() {
+  const [imageUploaded, setImageUploaded] = useState(false)
   const [file, setFile] = useState(null);
-  const { register, handleSubmit, setValue } = useForm();
-  const { createProduct } = useProducts();
+  const { register, handleSubmit, setValue} = useForm();
+  const { createProduct,getProduct, updateProduct  } = useProducts();
   const navigate = useNavigate();
+  const params= useParams();
+  useEffect(()=>{
+   async function loadProduct() {
+      if (params.id){
+
+      const product= await getProduct(params.id);
+      console.log(product)
+      setValue('title', product.title)
+      setValue('description', product.description)
+      setValue('price', product.price)
+      setValue('category', product.category)
+
+
+
+
+    }
+    }
+    loadProduct()
+  },[]);
 
   const escucharFile = (e) => {
     const selectFile = e.target.files[0];
@@ -27,6 +47,10 @@ function ProductsFormPage() {
         
         // Actualizar el valor de "url" usando setValue
         setValue("url", urlFirebase);
+        setImageUploaded(true);
+    setTimeout(() => {
+      setImageUploaded(false);
+    }, 3000);
   
         console.log("esta es la url", urlFirebase); // Mostrar la URL en la consola
       } catch (error) {
@@ -39,14 +63,20 @@ function ProductsFormPage() {
 
   const onSubmit = handleSubmit(async (data) => {
     try {
-      console.log("titulo", data.title);
-      console.log("url", data);
+      
+       if (params.id){
+          updateProduct(params.id, data);
+       }
 
-      await createProduct(data);
-      navigate("/products");
+       else {
+        await createProduct(data);
+       }
+       
     } catch (error) {
       console.error("Error al crear el producto:", error);
     }
+    navigate("/products");
+
   });
 
   return (
@@ -59,9 +89,21 @@ function ProductsFormPage() {
           <input className="form-control" type="text" placeholder="category" {...register("category")} />
           <input type="file" onChange={escucharFile} />
 
-          <button className="btn btn-primary" onClick={guardarArchivo}>
-            Subir Imagen y Agregar Producto
+           <button
+            type="button"
+            className="btn btn-primary mt-2" // Agregamos margen superior para separación
+            onClick={guardarArchivo}
+          >
+            Subir Imagen
           </button>
+
+          {imageUploaded && (
+            <div className="alert alert-success mt-2" role="alert">
+              Su imagen se ha subido correctamente.
+            </div>
+          )}
+
+          <button className="btn btn-primary mt-3">Agregar</button>
         </form>
       </div>
     </div>

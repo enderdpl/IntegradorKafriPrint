@@ -3,7 +3,10 @@ import {
   createProductRequest,
   getProductsRequest,
   getProductsNoValidatedRequest,
-  deleteProductRequest
+  deleteProductRequest,
+  getProductRequest,
+  updateProductRequest
+
 } from "../api/Products";
 
 const ProductContext = createContext();
@@ -52,6 +55,21 @@ export function ProductProvider({ children }) {
       console.log(error);
     }
   };
+  const getProduct = async (id) => {{
+    try {
+        const res = await getProductRequest(id)
+    return res.data
+    } catch (error) {
+        console.log(error);
+    }
+  }}
+  const updateProduct = async (id,product) => {
+        try {
+            await updateProductRequest(id,product) 
+        } catch (error) {
+            console.log(error);
+        }
+  }
 
   return (
     <ProductContext.Provider
@@ -60,7 +78,9 @@ export function ProductProvider({ children }) {
         createProduct,
         getProducts,
         getProductsNoValidated,
-        deleteProduct
+        deleteProduct,
+        getProduct,
+        updateProduct
       }}
     >
       {children}
