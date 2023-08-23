@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel-container {
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.reseñas-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.reseña {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    flex: 0 0 auto;
+    width: 300px;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.texto {
+    margin-top: 10px;
+}

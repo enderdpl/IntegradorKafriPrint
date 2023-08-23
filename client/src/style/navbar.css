@@ -1,19 +1,23 @@
+.navbar {
+  background-color: #403a51;
+  font-size: 20px;
+  font-family: 'Open Sans' sans-serif;
 
-.navbar{
-    background-color: #403a51;
-    font-size: 20px;
-    font-family: 'Open Sans' sans-serif;
-   
 }
+
 .navbar-spacing li {
-    margin-right: 60px; /* Ajusta el valor del margen según el espacio deseado */
-  
+  margin-right: 60px;
+  /* Ajusta el valor del margen según el espacio deseado */
+
 }
 
 .navbar-nav a {
-    color: #d3d3d3 !important; /* Cambia #FF0000 por el código de color deseado */
-    
+  color: #d3d3d3 !important;
+  /* Cambia #FF0000 por el código de color deseado */
+
 }
-  .navbar-nav a:hover {
-    background-color:  rgba(202, 198, 198, 0.128); /* Cambia #FF0000 por el color de fondo deseado */
-  }
+
+.navbar-nav a:hover {
+  background-color: rgba(202, 198, 198, 0.128);
+  /* Cambia #FF0000 por el color de fondo deseado */
+}
