@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {  useEffect } from 'react';
 import $ from 'jquery'; 
 import imgBaner from "../img/fondo-banner-1CHICO.png";
 import imgBaner2 from "../img/fondo-banner-2-CHICO.png.png";
@@ -13,26 +13,28 @@ import fotoper from "../img/testimonio4.jpg copy.jpeg";
 
 
 import "../style/cotizaciones.css"
+
+
 function Cotizacion() {
   useEffect(() => {
-    function animateTestimonios() {
-      var carrusel = $('.carrusel');
-      var primerTestimonio = carrusel.children().first();
-
-      function animacionLoop() {
-        carrusel.animate({ 'margin-left': '-25%' }, 5000, function() {
-          carrusel.append(primerTestimonio.clone());
-          primerTestimonio.remove();
-          carrusel.css('margin-left', 0);
-          setTimeout(animacionLoop, 5000);
-        });
-      }
-
-      animacionLoop();
-    }
-
     animateTestimonios();
   }, []);
+
+  function animateTestimonios() {
+    var carrusel = $('.carrusel');
+    var primerTestimonio = carrusel.children().first();
+
+    function animacionLoop() {
+      carrusel.animate({ 'margin-left': '-25%' }, 5000, function() {
+        carrusel.append(primerTestimonio.clone());
+        primerTestimonio.remove();
+        carrusel.css('margin-left', 0);
+        setTimeout(animacionLoop, 5000);
+      });
+    }
+
+    animacionLoop();
+  }
   
   return (
     <div>
@@ -44,7 +46,7 @@ function Cotizacion() {
         {/*  Imagen del banner*/}
         <section> 
           <div className="banner" onclick="redirectTo(event)">
-            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleSlidesOnly" className="carousel slide">
               <div className="container-fluid">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
@@ -69,11 +71,12 @@ function Cotizacion() {
         </section>
         {/* Flecha para deslizar el banner */}
         <a className="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="prev">
-          <img src= {flechaIz} alt="Previous" style={{width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)'}} />
-        </a>
-        <a className="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="next">
-          <img src={flechaDe} alt="Next" style={{width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)'}} />
-        </a>
+  <img src={flechaIz} alt="Anterior" style={{ width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)' }} />
+</a>
+<a className="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="next">
+  <img src={flechaDe} alt="Siguiente" style={{ width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)' }} />
+</a>
+
         {/* Iconos  */}
         <section>
           <div className="icon-container">
