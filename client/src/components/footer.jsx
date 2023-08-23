@@ -2,17 +2,20 @@ import React from 'react';
 import '../style/footer.css'; // Asegúrate de que este import esté en la parte superior del archivo
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
+import imgLogo from '../img/logo/logo2P.png'
 function footer() {
   return (
     <div>
       <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
-
+    <div>
+    <img src={imgLogo} className="rounded float-start mb-3" alt="logo" style={{width: '100pt'}} href="#" />
+    </div>
 <section id="footer">
   <div className="container-fluid">
     <footer className="py-1 my-1 border-top">
       <div className="row d-flex align-items-center justify-content-center">
         <div className="col-12 col-sm-6 text-center text-sm-start">
+          
           <p>© 2023</p>
         </div>
         <div className="col-12 col-sm-6 text-center text-sm-end">
