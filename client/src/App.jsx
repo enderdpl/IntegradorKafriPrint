@@ -25,6 +25,7 @@ import Papeleria from "./pages/Papeleria";
 import Sublimacion from "./pages/Sublimacion";
 import Preguntas from "./pages/Preguntas";
 import Carrito from "./pages/Carrito";
+import Home from "./pages/Home";
 
 
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="/sublimacion" element={< Sublimacion />} />
           <Route path="/preguntas" element={< Preguntas />} />
           <Route path="/carrito" element={< Carrito />} />
+          <Route path="/Home" element={< Home />} />
 
 
         <Route element= {<ProtectedRoute />}>

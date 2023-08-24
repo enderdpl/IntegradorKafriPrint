@@ -17,9 +17,11 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #faf8f8;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1980px;
+  font-family: 'Lato';
+  color: #333;
 }
 
 .my-form {
@@ -46,8 +48,9 @@ body {
 }
 p{
   font-size: 15px;
-  font-weight: bold;
-  color: rgb(159, 10, 10);
+  color: rgb(39, 33, 33);
+  font-family: sans-serif;
+  font-size: 18px;
 }
 .errors{
   max-width: 300px;
@@ -66,26 +69,57 @@ p{
   border: 1px solid #ccc;
   padding: 10px;
   justify-content: center;
+  
 }
 
 .product-card {
   border: 1px solid #ddd;
-  padding: 10px;
-  width: 300px;
+  padding: 20px;
+  width: 340px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
 }
 
 .button-container {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  margin: 15px;
+
 }
+
+
 
 .edit-button,
 .delete-button {
   padding: 6px 12px;
   cursor: pointer;
 }
+.productos {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productos button {
+  border: none;
+  background: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 125px;
+  cursor: pointer;
+  border-radius: 3%;
+}
+
+.product-image{
+  width: 340px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+
 
 /* ACA EMPIEZA ESTILOS DE PREGUNTA */
 

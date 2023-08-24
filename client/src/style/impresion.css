@@ -1,13 +1,21 @@
     /* Estilos para el título de la sección de impresiones 3D */
     .masthead {
         background-color: #7771946b; /* Color de fondo gris claro con transparencia */
-        padding-top: 100px; /* Espacio desde la parte superior del viewport */
+       padding-top: 10px;
         padding-bottom: 50px; /* Espacio desde la parte inferior del viewport */
       }
   
       .masthead h1 {
         margin-top: 0; /* Eliminamos el margen superior del título */
       }
+
+        /* Estilos para el contenedor del texto y título */
+        .section-container{
+          background-color: #bfdfda83; /* Color de fondo celeste */
+          border-radius: 30px; /* Bordes redondeados */
+          margin-top: 100px;;
+      }
+      
   /* Imagen de pagina sublimacion con borde circular */
   .explain {
     text-align: center; /* Centrar el texto */
@@ -15,8 +23,8 @@
   }
   
   .img-fluid {
-    width: 450px; /* El ancho deseado de las imágenes */
-    height: 510px; /* La altura deseada de las imágenes */
+    width: 490px; /* El ancho deseado de las imágenes */
+    height: 550px; /* La altura deseada de las imágenes */
     object-fit: cover; /* Ajuste de la imagen para llenar el contenedor */
     border-radius: 50%; /* Para que las imágenes tengan forma circular */
     margin-top: 10px;
@@ -26,16 +34,12 @@
     .section-background {
       margin-bottom: 20px; /* Espaciado inferior para separar secciones */
       text-align: center; /* Centrar el contenido del contenedor */
+      padding-top: 10px;
   }
-  
-  /* Estilos para el contenedor del texto y título */
-  .section-container {
-      background-color: #bfdfda83; /* Color de fondo celeste */
-      border-radius: 20px; /* Bordes redondeados */
-      padding: 20px; /* Espacio interno alrededor del contenido */
-  
-  }
-  
+
+
+
+
   /* Agrega estilos personalizados para el carrusel de imagen en la seccion impresion 3d*/
   #carouselExampleControls {
     max-width: 600px; /* Ajusta el valor según el tamaño deseado */

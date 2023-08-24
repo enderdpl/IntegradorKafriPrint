@@ -107,17 +107,18 @@
 
 
 .testimonial {
-    text-align: center;
-    margin-bottom: 30px;
+    text-align: center ;
+    margin-bottom: 50px;
     position: relative;
+    
   }
   
   .testimonial-bg {
     background-color: #bfdfda83; /* Color de fondo celeste */
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
-    height: 350px; /* Establecer una altura fija para los fondos */
-    width: 300px;
+    height: 370px; /* Establecer una altura fija para los fondos */
+    width: 380px;
 }
   
   .testimonial img {
@@ -129,13 +130,14 @@
   }
   
   .testimonial h4 {
-    font-size: 20px;
+    font-size: 18px !important;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
   .testimonial p {
     font-size: 16px;
+    text-align: center;
   }
   
   /* Estilos para el texto "Testimonios" */
