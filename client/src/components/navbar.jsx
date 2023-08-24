@@ -23,8 +23,19 @@ function Navbar() {
         </>
       ) : (
         <>
+          <Link to="/papeleria" className="nav-item nav-link">Papeleria</Link>
+          
+          <Link to="/conocenos" className="nav-item nav-link">Conocenos</Link>
+          <Link to="/sublimacion" className="nav-item nav-link">Sublimacion</Link>
+          <Link to="/cotizacion" className="nav-item nav-link">Cotizacion</Link>
+          <Link to="/carrito" className="nav-item nav-link">Productos</Link>
           <Link to="/login" className="nav-item nav-link">Login</Link>
           <Link to="/register" className="nav-item nav-link">Register</Link>
+
+
+
+
+
         </>
       )}
       <li className="nav-item dropdown">

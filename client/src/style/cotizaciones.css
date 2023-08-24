@@ -1,7 +1,4 @@
-#carouselExampleSlidesOnly{
 
-    background-color: #ddddde;
-}
 
 #cotizacion{
     background-color: #ddddde;
@@ -22,23 +19,7 @@
     margin: 0 5px;
     
 }
-#instagram{
-    color: #bc1888;
-    font-size: 30px;
-    margin: 1rem;
-    }
 
-#facebook{
-    color: #3b5998;
-    font-size: 30px;
-    margin: 1rem;
-    }    
-#whatsapp{
-
-    color: #D0E9EA;
-    font-size: 30px;
-    margin: 1rem;
-}    
 /* Estilos para el icono de WhatsApp flotante */
 .floating-wpp {
     position: fixed;

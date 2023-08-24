@@ -1,4 +1,5 @@
 import { useProducts } from "../context/ProductsContext";
+import { Link } from "react-router-dom";
 
 function ProductsCard({ product }) {
 
@@ -12,7 +13,9 @@ function ProductsCard({ product }) {
     <p>Price: ${product.price}</p>
     <p>Category: {product.category}</p>
     <div className="button-container">
-    <button className="btn btn-primary">Edit</button>
+
+    <Link className="btn btn-primary" to={`/products/${product._id}`}>Edit</Link>
+
     <button className="btn btn-danger" onClick={()=>{
       deleteProduct(product._id);
     }}>Delete</button>
