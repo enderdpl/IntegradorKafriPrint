@@ -1,15 +1,15 @@
 import React, {  useEffect } from 'react';
 import $ from 'jquery'; 
 import imgBaner from "../img/fondo-banner-1CHICO.png";
-import imgBaner2 from "../img/fondo-banner-2-CHICO.png.png";
-import imgBaner3 from "../img/fondo-banner-3-CHICO.png.png";
+import imgBaner2 from "../img/fondo-banner-2-CHICO.png";
+import imgBaner3 from "../img/fondo-banner-3-CHICO.png";
 import flechaIz from "../img/angle-left-solid.svg";
 import flechaDe from "../img/chevron-right-solid.svg";
 import fotoAno from "../img/anonima.img.jpg";
 import fotoper from "../img/testimonio4.jpg copy.jpeg";
 
 
-
+import { Link } from 'react-router-dom';
 
 
 import "../style/cotizaciones.css"
@@ -79,28 +79,38 @@ function Cotizacion() {
 
         {/* Iconos  */}
         <section>
-          <div className="icon-container">
-            <div className="icon-wrapper">
-              <a href="/sublimacion.html" className="scale-up-center"><i className="fas fa-tshirt custom-icon esd" /></a> {/* Icono de Polera */}
-              <span className="icon-label">Sublimación</span>
-            </div>
-            <div className="icon-wrapper">
-              <a href="/papeleria.html" className="scale-up-center"><i className="fas fa-paperclip custom-icon" /></a> {/* Icono de Papelería */}
-              <span className="icon-label">Papelería</span>
-            </div>
-            <div className="icon-wrapper">   
-              <a href="./impresion3d.html" className="scale-up-center"><i className="fas fa-print custom-icon" /></a> {/* Icono de Impresión 3D */}
-              <span className="icon-label">Impresión 3D</span>
-            </div>
-            <div className="icon-wrapper">
-              <a href="/preguntas.html" className="scale-up-center"><i className="fas fa-question custom-icon asd" /></a> {/* Icono de Preguntas Frecuentes */}
-              <span className="icon-label">Preguntas Frecuentes</span>
-            </div>
-            <div className="icon-wrapper">
-              <a href="#user" className="scale-up-center"><i className="fas fa-user custom-icon tes" /></a> {/* Icono de Usuario */}
-              <span className="icon-label">Testimonios</span>
-            </div>
-          </div>
+        <div className="icon-container">
+      <div className="icon-wrapper">
+        <Link to="/sublimacion" className="scale-up-center">
+          <i className="fas fa-tshirt custom-icon esd" />
+        </Link>
+        <span className="icon-label">Sublimación</span>
+      </div>
+      <div className="icon-wrapper">
+        <Link to="/papeleria" className="scale-up-center">
+          <i className="fas fa-paperclip custom-icon" />
+        </Link>
+        <span className="icon-label">Papelería</span>
+      </div>
+      <div className="icon-wrapper">
+        <Link to="/impresion" className="scale-up-center">
+          <i className="fas fa-print custom-icon" />
+        </Link>
+        <span className="icon-label">Impresión 3D</span>
+      </div>
+      <div className="icon-wrapper">
+        <Link to="/preguntas" className="scale-up-center">
+          <i className="fas fa-question custom-icon asd" />
+        </Link>
+        <span className="icon-label">Preguntas Frecuentes</span>
+      </div>
+      <div className="icon-wrapper">
+        <Link to="/Cotizacion" className="scale-up-center">
+          <i className="fas fa-user custom-icon tes" />
+        </Link>
+        <span className="icon-label">Testimonios</span>
+      </div>
+    </div>
         </section>
         {/* Seccion de testimonios, en esta seccion falta agregar funcionalidad, para que las personas puedan dejar el suyo */}
         <section id="user">
