@@ -1,5 +1,5 @@
 import "../style/preguntas.css"
-import LogoKafri from "../img/KafriLogo.png";
+
 
 function Preguntas() {
   return (
@@ -38,52 +38,7 @@ function Preguntas() {
         <div className="preg"> <i className="fas fa-question" />
           <span className="icon-label">¿Puedo ver los productos de forma presencial?</span></div><br />
         <h4>Por el momento no contamos con local físico, sin embargo, en nuestras RR.SS avisamos cada vez que participamos<br /> en una exposicion presencial, o en ferias artesanales.</h4>
-
-        {/* pie de pagina*/}
-        <section id="contact">
-          <div className="container-fluid">
-            <footer className="py-5 ">
-              <div className="row ">
-                <div> <img src={LogoKafri}  className="rounded float-start mb-3" alt="logo" style={{width: '100pt'}} href="#" /></div>
-                <div className="col-6 col-md-2 mb-2">
-                </div>
-                {/* Pie de página */}
-                <section id="contact">
-                  <div className="container-fluid">
-                    <footer className="py-1 my-1 border-top">
-                      <div className="row d-flex align-items-center justify-content-center">
-                        <div className="col-12 col-sm-6 text-center text-sm-start">
-                          <p>© 2023</p>
-                        </div>
-                        <div className="col-12 col-sm-6 text-center text-sm-end">
-                          <ul className="list-unstyled d-flex justify-content-center justify-content-sm-end">
-                            <li className="ms-3"><a className="link-body-emphasis" href="#"><svg className="bi" width={24} height={24}><use xlinkHref="#twitter" /></svg></a></li>
-                            <li className="ms-3"><a className="link-body-emphasis" href="#"><svg className="bi" width={24} height={24}><use xlinkHref="#instagram" /></svg></a></li>
-                            <li className="ms-3"><a className="link-body-emphasis" href="#"><svg className="bi" width={24} height={24}><use xlinkHref="#facebook" /></svg></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </footer>
-                  </div>
-                  {/* Iconos RRSS */}
-                  <div className="container-fluid">
-                    <div className="row">
-                      <div className="col-12">
-                        <div className="social-icons text-center">
-                          <p />
-                          <a href="https://www.facebook.com/KrafiPrint" target="_blank" rel="noreferrer"><i className="fab fa-facebook fa-2x" id="facebook" /></a>
-                          <a href="#"><i className="fa-brands fa-whatsapp fa-2x" id="whatsapp" /></a>
-                          <a href="https://www.instagram.com/krafiprint/?hl=es" target="_blank" rel="noreferrer"><i className="fab fa-instagram fa-2x" id="instagram" /></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                {/* Carga de scripts de JavaScript al final del documento */}
-              </div></footer></div></section></div>
-
-
-
+</div>
   )
 }
 
