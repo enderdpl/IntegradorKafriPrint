@@ -8,11 +8,11 @@ function CarProducts({ product }) {
       <img className="product-image" src={product.url} alt={product.title} />
       <p>Price: ${product.price}</p>
       <p>Category: {product.category}</p>
+      <div className="productos">
       <div className="button-container">
-      <button className="btn btn-primary">Añadir a carrito</button>
-      <button className="btn btn-danger">Comprar</button>
+      <button className="btn-add-card">Añadir al carrito</button>
     </div>
-    </div>
+    </div> </div>
     
       
     )

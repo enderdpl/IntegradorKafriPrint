@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import "../style/carrito.css"
+import "../style/navbar.css"
+import Logo from "../img/logo/logo2P.png"
 
 function Navbar() {
   const { isAuthenticate, logout,user } = useAuth();
 
   return (
     <div>
-<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav className="navbar navbar-expand-lg ">
   <div className="container">
-    <Link to="/" className="navbar-brand">Products Manager</Link>
+  <Link to="/" className="navbar-brand">
+  <img src={Logo} alt="" style={{ width: '150px', height: 'auto' }} />
+      </Link>
+
     <div className="navbar-nav ms-auto">
       {isAuthenticate ? (
         <>
@@ -23,17 +28,13 @@ function Navbar() {
         </>
       ) : (
         <>
-          <Link to="/papeleria" className="nav-item nav-link">Papeleria</Link>
-          
+
+        
           <Link to="/conocenos" className="nav-item nav-link">Conocenos</Link>
-          <Link to="/sublimacion" className="nav-item nav-link">Sublimacion</Link>
           <Link to="/cotizacion" className="nav-item nav-link">Cotizacion</Link>
           <Link to="/carrito" className="nav-item nav-link">Productos</Link>
           <Link to="/login" className="nav-item nav-link">Login</Link>
           <Link to="/register" className="nav-item nav-link">Register</Link>
-
-
-
 
 
         </>

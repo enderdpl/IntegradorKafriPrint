@@ -200,3 +200,12 @@ header {
 .hidden {
     display: none;}
     
+ .boton button {
+        border: none;
+        background: none;
+        background-color: #000;
+        color: #fff;
+        padding: 15px 125px;
+        cursor: pointer;
+        border-radius: 3%;
+      }

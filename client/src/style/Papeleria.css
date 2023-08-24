@@ -5,7 +5,7 @@
 
 .masthead {
   background-color: #b3cfdaee;
-  padding-top: 130px;
+  padding-top: 60px !important;
   padding-bottom: 50px;
 }
 
@@ -19,16 +19,16 @@
 .img-chapita,
 .img-sticker,
 .img-target {
-  max-width: 1000px;
+  max-width: 1000px !important;
 }
 
 .img-postit,
 .img-agenda{
-  max-width: 840px;
+  max-width: 840px !important;
   
 }
 .img-fluid {
-  width: 120%; /* Cambia este valor según tus necesidades */
+  width: 120%;
   object-fit: cover;
   border-radius: 0;
   border: 0;

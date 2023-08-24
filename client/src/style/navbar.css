@@ -3,10 +3,10 @@
     background-color: #403a51;
     font-size: 20px;
     font-family: 'Open Sans' sans-serif;
-   
+  
 }
 .navbar-spacing li {
-    margin-right: 60px; /* Ajusta el valor del margen según el espacio deseado */
+    margin-right: 80px; /* Ajusta el valor del margen según el espacio deseado */
   
 }
 
@@ -15,5 +15,6 @@
     
 }
   .navbar-nav a:hover {
-    background-color:  rgba(202, 198, 198, 0.128); /* Cambia #FF0000 por el color de fondo deseado */
+    background-color:  rgba(202, 198, 198, 0.42); /* Cambia #FF0000 por el color de fondo deseado */
+  border-radius: 20%;
   }

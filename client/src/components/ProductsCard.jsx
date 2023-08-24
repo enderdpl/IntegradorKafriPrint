@@ -14,11 +14,11 @@ function ProductsCard({ product }) {
     <p>Category: {product.category}</p>
     <div className="button-container">
 
-    <Link className="btn btn-primary" to={`/products/${product._id}`}>Edit</Link>
+    <Link className="btn btn-primary" to={`/products/${product._id}`}>Editar</Link>
 
     <button className="btn btn-danger" onClick={()=>{
       deleteProduct(product._id);
-    }}>Delete</button>
+    }}>Eliminar</button>
   </div>
   </div>
   

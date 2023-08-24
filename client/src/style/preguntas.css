@@ -1,6 +1,6 @@
 .masthead {
   background-color: #bfdfda; /* Color de fondo gris claro con transparencia */
-  padding-top: 130px; /* Espacio desde la parte superior del viewport */
+  padding-top: 60px !important;
   padding-bottom: 50px; /* Espacio desde la parte inferior del viewport */
 }
 
@@ -11,10 +11,10 @@
 .preg {
 
   display: inline-flex; /* Hace que los elementos dentro del div se alineen en una sola fila */
-  align-items: center; /* Centra verticalmente los elementos en la fila */
+  align-items: center !important; /* Centra verticalmente los elementos en la fila */
   padding:50px; /* Agregar espacio interno alrededor del contenido */
   padding-bottom: 58px;
-  padding-left: 45px;
+  padding-left: 45px ;
   padding-right: 65px;
   font-size: 35px; /* Tamaño del icono */
   border-radius: 100%; /* Borde sea redondo, creando un círculo */
@@ -22,12 +22,12 @@
   width:80px;
   height: 60px;
   margin-top: 20px;
-  margin-left: 200px;
+  margin-left: 250px;
   }
   /* Estilos para el elemento <i> con la clase "fas fa-question" (ícono) */
 .preg i {
 
-  margin-right: 52px; /* Agrega un espacio entre el ícono y el texto "Hola" */
+  margin-right: 82px; /* Agrega un espacio entre el ícono y el texto "Hola" */
   }
   
   
@@ -36,7 +36,7 @@
   h4{
       font-family: sans-serif;
       font-style: oblique;
-      margin-left: 100px;
+      margin-left: 190px !important;
       text-align: left; 
   }
 .icon-label {
