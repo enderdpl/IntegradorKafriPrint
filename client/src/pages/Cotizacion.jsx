@@ -16,6 +16,8 @@ import "../style/cotizaciones.css"
 
 
 function Cotizacion() {
+  const images = [imgBaner, imgBaner2, imgBaner3];
+  const [activeIndex, setActiveIndex] = React.useState(0);
   useEffect(() => {
     animateTestimonios();
   }, []);
@@ -35,7 +37,19 @@ function Cotizacion() {
 
     animacionLoop();
   }
-  
+  const handleImageClick = (index) => {
+    window.location.href = images[index]; // Cambia esto por la URL a la que deseas redirigir
+  };
+
+  const handlePrevClick = () => {
+    const newIndex = (activeIndex - 1 + images.length) % images.length;
+    setActiveIndex(newIndex);
+  };
+
+  const handleNextClick = () => {
+    const newIndex = (activeIndex + 1) % images.length;
+    setActiveIndex(newIndex);
+  };
   return (
     <div>
 
@@ -44,38 +58,42 @@ function Cotizacion() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         {/*  Imagen del banner*/}
-        <section> 
-          <div className="banner" onclick="redirectTo(event)">
-            <div id="carouselExampleSlidesOnly" className="carousel slide">
-              <div className="container-fluid">
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img src={imgBaner} className="d-block w-100" alt="Banner 1" />
-                  </div>
-                  <div className="carousel-item">
-                    <img src={imgBaner2} className="d-block w-100" alt="Banner 2" />
-                  </div>
-                  <div className="carousel-item">
-                    <img src={imgBaner3} className="d-block w-100" alt="Banner 3" />
-                  </div>
+        <section>
+      <div className="banner">
+        <div id="carouselExampleSlidesOnly" className="carousel slide">
+          <div className="container-fluid">
+            <div className="carousel-inner">
+              {images.map((image, index) => (
+                <div key={index} className={`carousel-item ${index === activeIndex ? 'active' : ''}`}>
+                  <img
+                    src={image}
+                    className="d-block w-100"
+                    alt={`Banner ${index + 1}`}
+                    onClick={() => handleImageClick(index)}
+                  />
                 </div>
-              </div>
-              {/* Indicadores de la posición del banner */}
-              <ol className="carousel-indicators">
-                <li data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to={0} className="active" />
-                <li data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to={1} />
-                <li data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to={2} />
-              </ol>
+              ))}
             </div>
           </div>
-        </section>
-        {/* Flecha para deslizar el banner */}
-        <a className="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="prev">
-  <img src={flechaIz} alt="Anterior" style={{ width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)' }} />
-</a>
-<a className="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="next">
-  <img src={flechaDe} alt="Siguiente" style={{ width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)' }} />
-</a>
+          <ol className="carousel-indicators">
+            {images.map((_, index) => (
+              <li
+                key={index}
+                data-bs-target="#carouselExampleSlidesOnly"
+                data-bs-slide-to={index}
+                className={index === activeIndex ? 'active' : ''}
+              />
+            ))}
+          </ol>
+        </div>
+      </div>
+      <a className="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="prev" onClick={handlePrevClick}>
+        <img src={flechaIz} alt="Anterior" style={{ width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)' }} />
+      </a>
+      <a className="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="next" onClick={handleNextClick}>
+        <img src={flechaDe} alt="Siguiente" style={{ width: '50px', backgroundColor: 'rgba(201, 201, 201, 0.174)' }} />
+      </a>
+    </section>
 
         {/* Iconos  */}
         <section>
