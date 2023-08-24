@@ -1,10 +1,10 @@
-import "../style/style.css"
-import "../style/responsive.css"
-import "../style/bootstrap.min.css"
-import ojo from "../img/why1.png"
-import bote from "../img/why2.png"
-import logo from "../img/logo/logo2P.png"
-import sra from "../img/about.png"
+// import "../style/style.css"
+// import "../style/responsive.css"
+// import "../style/bootstrap.min.css"
+// import ojo from "../img/why1.png"
+// import bote from "../img/why2.png"
+// import logo from "../img/logo/logo2P.png"
+// import sra from "../img/about.png"
 
 
 

@@ -1,6 +1,5 @@
-
-
-
+import flechaIz from "../img/angle-left-solid.svg";
+import flechaDe from "../img/chevron-right-solid.svg";
 import imgBaner from "../img/fondo-banner-1CHICO.png";
 import imgBaner2 from "../img/fondo-banner-2-CHICO.png";
 import imgBaner3 from "../img/fondo-banner-3-CHICO.png";

@@ -25,6 +25,9 @@ import Papeleria from "./pages/Papeleria";
 import Sublimacion from "./pages/Sublimacion";
 import Preguntas from "./pages/Preguntas";
 import Carrito from "./pages/Carrito";
+import InicioWeb from "./pages/inicioWeb";
+import Home from "./pages/Home";
+
 
 
 
@@ -36,7 +39,7 @@ function App() {
       <BrowserRouter>
       <Navbar />
         <Routes>
-          <Route path="/" element={ < HomePage /> } />
+          <Route path="/" element={ < Home /> } />
           <Route path="/login" element={< LoginPage /> } />
           <Route path="/register" element={< RegisterPage />} />
           <Route path="/conocenos" element={< Conocenos />} />
@@ -47,6 +50,10 @@ function App() {
           <Route path="/sublimacion" element={< Sublimacion />} />
           <Route path="/preguntas" element={< Preguntas />} />
           <Route path="/carrito" element={< Carrito />} />
+          <Route path="/home" element={< HomePage />} />
+          <Route path="/inicio" element={< InicioWeb />} />
+
+
 
 
         <Route element= {<ProtectedRoute />}>
