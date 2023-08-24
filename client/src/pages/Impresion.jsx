@@ -15,7 +15,7 @@ function Impresion() {
        <>
   <header className="masthead text-center text-white">
     <div className="container px-5">
-      <h1 className="display-3">Descubre nuestras impresiones 3D</h1>
+      <h1 className="display-3"> impresion 3D</h1>
     </div>
     <div className="bg-circle-1 bg-circle" />
     <div className="bg-circle-2 bg-circle" />
@@ -181,14 +181,6 @@ function Impresion() {
     </div>
   </section>
 </>
-
-
-
-
-
-
-
-
 
 
     </div>
