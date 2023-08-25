@@ -85,17 +85,23 @@ function ProductsFormPage() {
         <form onSubmit={onSubmit}>
           <input className="form-control" type="text" placeholder="title" {...register("title")} autoFocus />
           <input className="form-control" type="number" placeholder="price" {...register("price")} />
-          <input className="form-control" type="text" placeholder="description" {...register("description")} />
-          <input className="form-control" type="text" placeholder="category" {...register("category")} />
-          <input type="file" onChange={escucharFile} />
+          <textarea className="form-control" placeholder="description" {...register("description")} />
 
-           <button
-            type="button"
-            className="btn btn-primary mt-2" // Agregamos margen superior para separación
-            onClick={guardarArchivo}
-          >
-            Subir Imagen
-          </button>
+          <input className="form-control" type="text" placeholder="category" {...register("category")} />
+          <div className="d-flex align-items-center">
+  <input type="file" onChange={escucharFile} className="me-2" />
+  <button
+    type="button"
+    className="btn btn-danger"
+    style={{ backgroundColor: "#0c3a5f", borderColor: "#0c3a5f" }}
+    onClick={guardarArchivo}
+  >
+    Subir Imagen
+  </button>
+</div>
+
+
+          
 
           {imageUploaded && (
             <div className="alert alert-success mt-2" role="alert">
@@ -103,7 +109,7 @@ function ProductsFormPage() {
             </div>
           )}
 
-          <button className="btn btn-primary mt-3">Agregar</button>
+          <button className="btn btn-primary mt-3">Agregar Producto</button>
         </form>
       </div>
     </div>

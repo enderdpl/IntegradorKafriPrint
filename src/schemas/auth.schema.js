@@ -18,12 +18,12 @@ export const registerSchema= z.object({
 
 export const loginSchema=z.object({
     email: z.string({
-        required_error: 'email is require',
+        required_error: 'Correo es Requerido',
     }).email({
-        message: ' Email no es valido'
+        message: ' Correo no es Valido'
     }),
     password: z.string({
-        required_error:'Password is require',
+        required_error:'Contraseña es Requerida',
 
     }).min(6,{
         message:'Contraseña debe tener mas de 6 caracteres'

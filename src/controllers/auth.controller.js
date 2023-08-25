@@ -49,11 +49,11 @@ export const login =  async (req,res) => {
         //para buscar a el usuario que se registra 
         const userFound= await user.findOne ({email})
         
-        if (!userFound ) return res.status(400).json({message: 'user not found'})
+        if (!userFound ) return res.status(400).json({message: 'Usuario no Encontrado'})
          // realizo la comparacion de las contraseña la que ingresa y la que encuentra atravez de su correo
          const isMatch =  await bcrypt.compare(password,userFound.password)
 
-         if(!isMatch)return res.status(400).json({message: 'incorrect password'})
+         if(!isMatch)return res.status(400).json({message: 'Contraseña es Incorrecta'})
          // generamos un token con la persona login
          const token = await createdAccessToken({id : userFound._id})
             

@@ -52,14 +52,14 @@ function LoginPage() {
       placeholder="Password"
     />
     {errors.password ? (
-            <p> password es requerido</p>
+            <p> Contraseña es Requerida</p>
             ) : null}
   </div>
   <button type="submit" className="btn btn-primary">
-    Register
+    Iniciar Sesion
   </button>
   <p>
-  ¿No tienes cuenta? <Link to="/register" className="btn-btn-danger">Registrarse</Link> 
+  ¿Olvidaste tu contraseña? <Link to="/" className="btn-btn-danger">Recuperar</Link> 
 </p>
 </form>
 

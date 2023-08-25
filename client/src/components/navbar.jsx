@@ -18,13 +18,17 @@ function Navbar() {
     <div className="navbar-nav ms-auto">
       {isAuthenticate ? (
         <>
-          <span className="nav-item nav-link">Bienvenido {user.username} </span>
+          <span className="nav-item nav-link">
+   <Link to="/products">Bienvenido {user.username}</Link>
+</span>
+          <Link to="/register" className="nav-item nav-link">Registrar</Link>
+
           
           <Link to="/add-product" className="nav-item nav-link">Añadir Producto</Link>
           <Link to="/login" className="nav-item nav-link"
           onClick={()=>{
             logout();
-          }}>Logout</Link>
+          }}>Cerrar Sesion</Link>
         </>
       ) : (
         <>
@@ -33,8 +37,7 @@ function Navbar() {
           <Link to="/conocenos" className="nav-item nav-link">Conocenos</Link>
           <Link to="/cotizacion" className="nav-item nav-link">Cotizacion</Link>
           <Link to="/carrito" className="nav-item nav-link">Productos</Link>
-          <Link to="/login" className="nav-item nav-link">Login</Link>
-          <Link to="/register" className="nav-item nav-link">Register</Link>
+          <Link to="/login" className="nav-item nav-link">Inicio Sesion</Link>
 
 
         </>

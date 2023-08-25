@@ -1,18 +1,20 @@
 function CarProducts({ product }) {
     return (
-      <div>
-    <div >
-        </div> 
-      <h1>{product.title}</h1>
-      <p>{product.description}</p>
-      <img className="product-image" src={product.url} alt={product.title} />
-      <p>Price: ${product.price}</p>
-      <p>Category: {product.category}</p>
-      <div className="productos">
-      <div className="button-container">
-      <button className="btn-add-card">Añadir al carrito</button>
-    </div>
-    </div> </div>
+      <div class="product">
+      <div class="product-image-container">
+          <img class="product-image" src={product.url} alt={product.title} />
+      </div>
+      <div class="product-info">
+          <h1>{product.title}</h1>
+          <p>{product.description}</p>
+          <p class="product-price">Price: ${product.price}</p>
+          <p class="product-category">Category: {product.category}</p>
+          <div class="button-container">
+            <button class="btn-add-cart">Add to Cart</button>
+        </div>
+      </div>
+  </div>
+  
     
       
     )

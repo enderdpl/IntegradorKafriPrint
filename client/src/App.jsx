@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import ProtectedRoute from "./ProtectedRoute";
 import Ejemplo from "./components/ejemplo";
 import Footer from "./components/footer";
+import What from "./components/WhatsappFlotante"
 
 
 // import './index.css';
@@ -41,7 +42,6 @@ function App() {
         <Routes>
           <Route path="/" element={ < Home /> } />
           <Route path="/login" element={< LoginPage /> } />
-          <Route path="/register" element={< RegisterPage />} />
           <Route path="/conocenos" element={< Conocenos />} />
           <Route path="/contactos" element={< Contactos />} />
           <Route path="/cotizacion" element={< Cotizacion />} />
@@ -49,23 +49,26 @@ function App() {
           <Route path="/papeleria" element={< Papeleria />} />
           <Route path="/sublimacion" element={< Sublimacion />} />
           <Route path="/preguntas" element={< Preguntas />} />
-          <Route path="/carrito" element={< Carrito />} />
-          <Route path="/home" element={< HomePage />} />
+          <Route path="/carrito" element={< HomePage />} />
           <Route path="/inicio" element={< InicioWeb />} />
 
 
 
 
         <Route element= {<ProtectedRoute />}>
+        
+
           <Route path="/products" element={< ProductsPage />} />
           <Route path="/add-product" element={< ProductsFormPage />} />
           <Route path="/products/:id" element={< ProductsFormPage />} />
           <Route path="/profile" element={ < ProfilePage />} />
           <Route path="/ejemplo" element={ < Ejemplo />} />
+          <Route path="/register" element={< RegisterPage />} />
           
         </Route>
 
         </Routes>
+        <What />
         <Footer />
       </BrowserRouter>
     </ProductProvider> 
