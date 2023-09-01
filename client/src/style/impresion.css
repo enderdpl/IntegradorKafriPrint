@@ -1,60 +1,86 @@
     /* Estilos para el título de la sección de impresiones 3D */
     .masthead {
-        background-color: #7771946b; /* Color de fondo gris claro con transparencia */
-       padding-top: 10px;
-        padding-bottom: 50px; /* Espacio desde la parte inferior del viewport */
-      }
-  
-      .masthead h1 {
-        margin-top: 0; /* Eliminamos el margen superior del título */
-      }
+      background-color: #7771946b;
+      /* Color de fondo gris claro con transparencia */
+      padding-top: 10px;
+      padding-bottom: 50px;
+      /* Espacio desde la parte inferior del viewport */
+    }
 
-        /* Estilos para el contenedor del texto y título */
-        .section-container{
-          background-color: #bfdfda83; /* Color de fondo celeste */
-          border-radius: 30px; /* Bordes redondeados */
-          margin-top: 100px;;
-      }
-      
-  /* Imagen de pagina sublimacion con borde circular */
-  .explain {
-    text-align: center; /* Centrar el texto */
-    font-family: Verdana; /* Cambiar la fuente del texto */
-  }
-  
-  .img-fluid {
-    width: 490px; /* El ancho deseado de las imágenes */
-    height: 550px; /* La altura deseada de las imágenes */
-    object-fit: cover; /* Ajuste de la imagen para llenar el contenedor */
-    border-radius: 50%; /* Para que las imágenes tengan forma circular */
-    margin-top: 10px;
-    border: 5px solid #7771946b; /* Ancho y color del borde */
-  }
+    .masthead h1 {
+      margin-top: 0;
+      /* Eliminamos el margen superior del título */
+    }
+
+    .section-new {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: #bfdfda83;
+      border-radius: 30px;
+      margin-top: 100px;
+      padding: 48px;
+    }
+
+    /* Estilos para el contenedor del texto y título */
+    .section-container {
+      background-color: #bfdfda83;
+      /* Color de fondo celeste */
+      border-radius: 30px;
+      /* Bordes redondeados */
+      /* margin-top: 100px; */
+    }
+
+    /* Imagen de pagina sublimacion con borde circular */
+    .explain {
+      text-align: center;
+      /* Centrar el texto */
+      font-family: Verdana;
+      /* Cambiar la fuente del texto */
+    }
+
+    .img-fluid {
+      width: 490px;
+      /* El ancho deseado de las imágenes */
+      height: 550px;
+      /* La altura deseada de las imágenes */
+      object-fit: cover;
+      /* Ajuste de la imagen para llenar el contenedor */
+      border-radius: 50%;
+      /* Para que las imágenes tengan forma circular */
+      margin-top: 10px;
+      border: 5px solid #7771946b;
+      /* Ancho y color del borde */
+    }
+
     /* Estilos para el fondo del texto y título */
     .section-background {
-      margin-bottom: 20px; /* Espaciado inferior para separar secciones */
-      text-align: center; /* Centrar el contenido del contenedor */
+      margin-bottom: 20px;
+      /* Espaciado inferior para separar secciones */
+      text-align: center;
+      /* Centrar el contenido del contenedor */
       padding-top: 10px;
-  }
+    }
 
 
 
 
-  /* Agrega estilos personalizados para el carrusel de imagen en la seccion impresion 3d*/
-  #carouselExampleControls {
-    max-width: 600px; /* Ajusta el valor según el tamaño deseado */
-    margin: 0 auto; /* Centra horizontalmente el carrusel */
-  }
-  
-  #carouselExampleControls .carousel-inner .carousel-item img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor del carrusel */
-    height: 360px; /* Ajusta la altura deseada para las imágenes del carrusel */
-    object-fit: cover; /* Ajusta cómo se ajusta la imagen en el espacio */
-    border: 8px solid #bfdfda83; /* Ancho y color del borde */
-  }
-  
-  
-  
-  
-  
-  
+    /* Agrega estilos personalizados para el carrusel de imagen en la seccion impresion 3d*/
+    #carouselExampleControls {
+      max-width: 600px;
+      /* Ajusta el valor según el tamaño deseado */
+      margin: 0 auto;
+      /* Centra horizontalmente el carrusel */
+    }
+
+    #carouselExampleControls .carousel-inner .carousel-item img {
+      width: 100%;
+      /* Ajusta el ancho de la imagen al 100% del contenedor del carrusel */
+      height: 360px;
+      /* Ajusta la altura deseada para las imágenes del carrusel */
+      object-fit: cover;
+      /* Ajusta cómo se ajusta la imagen en el espacio */
+      border: 8px solid #bfdfda83;
+      /* Ancho y color del borde */
+    }

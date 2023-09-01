@@ -19,7 +19,7 @@ function Papeleria() {
               <img src={Chapita} alt="imagen1" className="img-fluid img-chapita" />
             </div>
             <div className="col cuadrado">
-              <div className="texto">En la sección de papeleria de Krafi Print nos especializamos en la impresion y medios graficos personalizados. Ofrecemos una amplia gama de productos de papel y suministros de oficina.</div>
+              <div className="texto">En la sección de papeleria de Krafi Print nos especializamos en la impresión y medios gráficos personalizados. Ofrecemos una amplia gama de productos de papel y suministros de oficina.</div>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ function Papeleria() {
         <div className="container-fluid">
           <div className="row">
             <div className="col cuadrado">
-              <div className="texto">Los productos que puedes encontrar acá son: agendas, tarjetas, organizadores, calendarios, chapitas y más</div>
+              <div className="texto">Los productos que puedes encontrar acá son: agendas, tarjetas, organizadores, calendarios, chapitas y más.</div>
             </div>
             <div className="col-md-6">
               <img src={Agenda} alt="imagen2" className="img-fluid img-agenda" />
@@ -51,7 +51,7 @@ function Papeleria() {
         <div className="container-fluid">
           <div className="row">
             <div className="col cuadrado">
-              <div className="texto">Contáctanos hoy para obtener más información acerca de nuestros productos en stock y nuestros productos personalizados</div>
+              <div className="texto">Contáctanos hoy para obtener más información acerca de nuestros productos en stock y nuestros productos personalizados.</div>
             </div>
             <div className="col-md-6">
               <img src={Postit} alt="imagen4" className="img-fluid img-postit" />

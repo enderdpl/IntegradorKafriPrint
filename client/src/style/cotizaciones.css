@@ -1,85 +1,118 @@
-
-
-#cotizacion{
-    background-color: #ddddde;
+#cotizacion {
+  background-color: #ddddde;
 }
 
 
-.fa-calendar-lines{
+.fa-calendar-lines {
 
-    background-color: #403a51;
+  background-color: #403a51;
 }
 
 
 #carouselExampleSlidesOnly .carousel-indicators li {
-    background-color: rgb(202, 198, 198);
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    
+  background-color: rgb(202, 198, 198);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+
 }
 
 /* Estilos para el icono de WhatsApp flotante */
 .floating-wpp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-  }
-/* Estilos para los iconos */
-.custom-icon {
-  font-size: 40px; /* Tamaño del icono */
-  color: #403a51c7; /* Color del icono */
-  border: 3px solid rgb(200, 199, 199); /* Borde del icono */
-  border-radius: 50%; /* Borde redondeado del icono */
-  padding: 30px; /* Espacio interno del icono */
-  margin: 35px; /* Espacio externo del icono, margen izquierdo y derecho iguales a 20px */
-  transition: color 0.3s; /* Transición suave para el cambio de color */
-}
-.esd{
-  font-size: 45px; /* Tamaño del icono */
-  color: #403a51c7; /* Color del icono */
-  border: 3px solid rgb(200, 199, 199); /* Borde del icono */
-  border-radius: 50%; /* Borde redondeado del icono */
-  padding: 30px; /* Espacio interno del icono */
-  padding-left: 23px; /* Centrar icono */
-  margin: 35px; /* Espacio externo del icono, margen izquierdo y derecho iguales a 20px */
-  transition: color 0.3s; /* Transición suave para el cambio de color */
-   width: 104.8px ;
-   height: 104.8px ; 
-   
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
 }
 
-.asd{
-  font-size: 45px; /* Tamaño del icono */
-  color: #403a51c7; /* Color del icono */
-  border: 3px solid rgb(200, 199, 199); /* Borde del icono */
-  border-radius: 50%; /* Borde redondeado del icono */
-  padding: 30px; /* Espacio interno del icono */
+/* Estilos para los iconos */
+.custom-icon {
+  font-size: 40px;
+  /* Tamaño del icono */
+  color: #403a51c7;
+  /* Color del icono */
+  border: 3px solid rgb(200, 199, 199);
+  /* Borde del icono */
+  border-radius: 50%;
+  /* Borde redondeado del icono */
+  padding: 30px;
+  /* Espacio interno del icono */
+  margin: 35px;
+  /* Espacio externo del icono, margen izquierdo y derecho iguales a 20px */
+  transition: color 0.3s;
+  /* Transición suave para el cambio de color */
+}
+
+.esd {
+  font-size: 45px;
+  /* Tamaño del icono */
+  color: #403a51c7;
+  /* Color del icono */
+  border: 3px solid rgb(200, 199, 199);
+  /* Borde del icono */
+  border-radius: 50%;
+  /* Borde redondeado del icono */
+  padding: 30px;
+  /* Espacio interno del icono */
+  padding-left: 23px;
+  /* Centrar icono */
+  margin: 35px;
+  /* Espacio externo del icono, margen izquierdo y derecho iguales a 20px */
+  transition: color 0.3s;
+  /* Transición suave para el cambio de color */
+  width: 104.8px;
+  height: 104.8px;
+
+}
+
+.asd {
+  font-size: 45px;
+  /* Tamaño del icono */
+  color: #403a51c7;
+  /* Color del icono */
+  border: 3px solid rgb(200, 199, 199);
+  /* Borde del icono */
+  border-radius: 50%;
+  /* Borde redondeado del icono */
+  padding: 30px;
+  /* Espacio interno del icono */
   padding-left: 35px;
-  margin: 35px; /* Espacio externo del icono, margen izquierdo y derecho iguales a 20px */
-  transition: color 0.3s; /* Transición suave para el cambio de color */
-   width: 104.8px ;
-   height: 104.8px ; 
-   
+  margin: 35px;
+  /* Espacio externo del icono, margen izquierdo y derecho iguales a 20px */
+  transition: color 0.3s;
+  /* Transición suave para el cambio de color */
+  width: 104.8px;
+  height: 104.8px;
+
 }
-.tes{
-  font-size: 45px; /* Tamaño del icono */
-  color: #403a51c7; /* Color del icono */
-  border: 3px solid rgb(200, 199, 199); /* Borde del icono */
-  border-radius: 50%; /* Borde redondeado del icono */
-  padding: 30px; /* Espacio interno del icono */
+
+.tes {
+  font-size: 45px;
+  /* Tamaño del icono */
+  color: #403a51c7;
+  /* Color del icono */
+  border: 3px solid rgb(200, 199, 199);
+  /* Borde del icono */
+  border-radius: 50%;
+  /* Borde redondeado del icono */
+  padding: 30px;
+  /* Espacio interno del icono */
   padding-left: 31px;
-  margin: 35px; /* Espacio externo del icono, margen izquierdo y derecho iguales a 20px */
-  transition: color 0.3s; /* Transición suave para el cambio de color */
-   width: 104.8px ;
-   height: 104.8px ; 
-   
+  margin: 35px;
+  /* Espacio externo del icono, margen izquierdo y derecho iguales a 20px */
+  transition: color 0.3s;
+  /* Transición suave para el cambio de color */
+  width: 104.8px;
+  height: 104.8px;
+
 }
+
 .icon-wrapper:hover .custom-icon {
-  color: rgb(179, 179, 179); /* Color al pasar el cursor por encima */
-  transform: scale(1.2); /* Escalar el icono al pasar el cursor por encima */
+  color: rgb(179, 179, 179);
+  /* Color al pasar el cursor por encima */
+  transform: scale(1.2);
+  /* Escalar el icono al pasar el cursor por encima */
 }
 
 /* Centrar los iconos en el contenedor */
@@ -94,141 +127,181 @@
   flex-direction: column;
   align-items: center;
 }
+
 /* Efecto scale-up-center */
 .scale-up-center {
   animation: scale-up-center 0.8s;
 }
 
 @keyframes scale-up-center {
-  0% { transform: scale(0.5); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
+
 /* Estilos para los testimonios */
 
 
 .testimonial {
-    text-align: center ;
-    margin-bottom: 50px;
-    position: relative;
-    
-  }
-  
-  .testimonial-bg {
-    background-color: #bfdfda83; /* Color de fondo celeste */
-    padding: 30px;
-    border-radius: 20px;
-    height: 370px; /* Establecer una altura fija para los fondos */
-    width: 380px;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+
 }
-  
-  .testimonial img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial h4 {
-    font-size: 18px !important;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial p {
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  /* Estilos para el texto "Testimonios" */
+
+.testimonial-bg {
+  background-color: #bfdfda83;
+  /* Color de fondo celeste */
+  padding: 30px;
+  border-radius: 20px;
+  height: 370px;
+  /* Establecer una altura fija para los fondos */
+  width: 380px;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-size: 18px !important;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Estilos para el texto "Testimonios" */
 .testimonios-title {
-    font-size: 20px;
-    color: rgb(64, 58, 103); /* Cambiar el color a tu preferencia, por ejemplo, "blue" */
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 100px;
+  font-size: 20px;
+  color: rgb(64, 58, 103);
+  /* Cambiar el color a tu preferencia, por ejemplo, "blue" */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 100px;
 }
-  /* Ajuste de tamaño del carrusel */
-  .carrusel-container {
-    overflow: hidden;
-  }
-  
-  .carrusel {
-    display: flex;
-    animation: carruselAnimation 40s linear infinite;
-    white-space: nowrap;
-  }
-  
-  /* Ajuste del ancho para mostrar todos los testimonios */
-  .reseña {
-    flex: 0 0 20%;
-    padding: 0 40px;
-    text-align: center;
-  }
-  
-  /* Animación del carrusel */
-  @keyframes carruselAnimation {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%); /* Ajuste para que los testimonios se repitan */
-    }
+
+/* Ajuste de tamaño del carrusel */
+.carrusel-container {
+  overflow: hidden;
+}
+
+.carrusel {
+  display: flex;
+  animation: carruselAnimation 40s linear infinite;
+  white-space: nowrap;
+}
+
+/* Ajuste del ancho para mostrar todos los testimonios */
+.reseña {
+  flex: 0 0 20%;
+  padding: 0 40px;
+  text-align: center;
+}
+
+/* Animación del carrusel */
+@keyframes carruselAnimation {
+  0% {
+    transform: translateX(0);
   }
 
-     /* Estilos para el título de la sección de impresiones 3D */
-     .masthead {
-      background-color: #7771946b; /* Color de fondo gris claro con transparencia */
-      padding-top: 100px; /* Espacio desde la parte superior del viewport */
-      padding-bottom: 50px; /* Espacio desde la parte inferior del viewport */
-    }
+  100% {
+    transform: translateX(-100%);
+    /* Ajuste para que los testimonios se repitan */
+  }
+}
 
-    .masthead h1 {
-      margin-top: 0; /* Eliminamos el margen superior del título */
-    }
+/* Estilos para el título de la sección de impresiones 3D */
+.masthead {
+  background-color: #7771946b;
+  /* Color de fondo gris claro con transparencia */
+  padding-top: 100px;
+  /* Espacio desde la parte superior del viewport */
+  padding-bottom: 50px;
+  /* Espacio desde la parte inferior del viewport */
+}
+
+.masthead h1 {
+  margin-top: 0;
+  /* Eliminamos el margen superior del título */
+}
+
 /* Imagen de pagina sublimacion con borde circular */
 .explain {
-  text-align: center; /* Centrar el texto */
-  font-family: Verdana; /* Cambiar la fuente del texto */
+  text-align: center;
+  /* Centrar el texto */
+  font-family: Verdana;
+  /* Cambiar la fuente del texto */
 }
 
 .img-fluid {
-  width: 450px; /* El ancho deseado de las imágenes */
-  height: 510px; /* La altura deseada de las imágenes */
-  object-fit: cover; /* Ajuste de la imagen para llenar el contenedor */
-  border-radius: 50%; /* Para que las imágenes tengan forma circular */
+  width: 450px;
+  /* El ancho deseado de las imágenes */
+  height: 510px;
+  /* La altura deseada de las imágenes */
+  object-fit: cover;
+  /* Ajuste de la imagen para llenar el contenedor */
+  border-radius: 50%;
+  /* Para que las imágenes tengan forma circular */
   margin-top: 10px;
-  border: 5px solid #7771946b; /* Ancho y color del borde */
+  border: 5px solid #7771946b;
+  /* Ancho y color del borde */
 }
-  /* Estilos para el fondo del texto y título */
-  .section-background {
-    margin-bottom: 20px; /* Espaciado inferior para separar secciones */
-    text-align: center; /* Centrar el contenido del contenedor */
+
+/* Estilos para el fondo del texto y título */
+.section-background {
+  margin-bottom: 20px;
+  /* Espaciado inferior para separar secciones */
+  text-align: center;
+  /* Centrar el contenido del contenedor */
 }
 
 /* Estilos para el contenedor del texto y título */
 .section-container {
-    background-color: #bfdfda83; /* Color de fondo celeste */
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 20px; /* Espacio interno alrededor del contenido */
+  background-color: #bfdfda83;
+  /* Color de fondo celeste */
+  border-radius: 20px;
+  /* Bordes redondeados */
+  padding: 20px;
+  /* Espacio interno alrededor del contenido */
 
 }
 
 /* Agrega estilos personalizados para el carrusel de imagen en la seccion impresion 3d*/
 #carouselExampleControls {
-  max-width: 600px; /* Ajusta el valor según el tamaño deseado */
-  margin: 0 auto; /* Centra horizontalmente el carrusel */
+  max-width: 600px;
+  /* Ajusta el valor según el tamaño deseado */
+  margin: 0 auto;
+  /* Centra horizontalmente el carrusel */
+}
+
+.pasos-text {
+  bottom: 40px;
+}
+
+.container-pasos {
+  margin-top: 70px;
 }
 
 #carouselExampleControls .carousel-inner .carousel-item img {
-  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor del carrusel */
-  height: 360px; /* Ajusta la altura deseada para las imágenes del carrusel */
-  object-fit: cover; /* Ajusta cómo se ajusta la imagen en el espacio */
-  border: 8px solid #bfdfda83; /* Ancho y color del borde */
+  width: 100%;
+  /* Ajusta el ancho de la imagen al 100% del contenedor del carrusel */
+  height: 360px;
+  /* Ajusta la altura deseada para las imágenes del carrusel */
+  object-fit: cover;
+  /* Ajusta cómo se ajusta la imagen en el espacio */
+  border: 8px solid #bfdfda83;
+  /* Ancho y color del borde */
 }
-
-
-
-
-

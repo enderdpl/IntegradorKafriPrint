@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    z-index: 2;
+}
+
 body {
     margin: 0 auto;
     max-width: 1980px;
@@ -198,14 +202,15 @@ header {
 
 
 .hidden {
-    display: none;}
-    
- .boton button {
-        border: none;
-        background: none;
-        background-color: #000;
-        color: #fff;
-        padding: 15px 125px;
-        cursor: pointer;
-        border-radius: 3%;
-      }
+    display: none;
+}
+
+.boton button {
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 125px;
+    cursor: pointer;
+    border-radius: 3%;
+}

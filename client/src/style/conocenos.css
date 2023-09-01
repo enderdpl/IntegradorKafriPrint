@@ -1,29 +1,46 @@
 .masthead {
-    background-color: #c0a3c7df; /* Color de fondo gris claro con transparencia */
-    padding-top: 130px; /* Espacio desde la parte superior del viewport */
-    padding-bottom: 50px; /* Espacio desde la parte inferior del viewport */
-  }
+  background-color: #c0a3c7df;
+  /* Color de fondo gris claro con transparencia */
+  padding-top: 130px;
+  /* Espacio desde la parte superior del viewport */
+  padding-bottom: 50px;
+  /* Espacio desde la parte inferior del viewport */
+}
 
- 
-  /*carrusel de fotos*/
-  #carouselExampleControls .carousel-inner  {
-    height: 100%; /* Aumenta este valor para aumentar la altura del carrusel */
-    width: 150%;
-    margin-left: -100px;
-    border: solid 5px rgba(0, 0, 0, 0.555);
-    border-radius: 10px;
+
+/*carrusel de fotos*/
+#carouselExampleControls .carousel-inner {
+  height: 100%;
+  /* Aumenta este valor para aumentar la altura del carrusel */
+  width: 150%;
+  margin-left: -100px;
+  border: solid 5px rgba(0, 0, 0, 0.555);
+  border-radius: 10px;
 
 }
 
 /*estilos feed de instram*/
-
-
-.lead{
-    font-family:'Lucida Sans';
-    padding-left: 150px;
+h1 {
+  font-family: 'Calibri';
+  font-weight: bold;
 }
-h3{
-    font-family:'Lucida Sans';
-    text-align: right;
-  }
-  
+
+.lead {
+  font-family: 'Calibri';
+  padding-left: 150px;
+}
+
+
+
+h2 {
+  font-family: 'Calibri';
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.lead-dos {
+  font-family: 'Calibri';
+  padding-right: 10px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
